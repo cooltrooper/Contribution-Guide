@@ -1,4 +1,4 @@
 - [Overview](README.md)
 - [VSCode](vscode.md)
 - [Git Style](gitStyle.md)
-- [Example Qplug File](coding/ExampleQplug.md)
+- [Example Qplug File](ExampleQplug.md)
