@@ -401,3 +401,9 @@ if Controls then
 -- Access plugin controls with "Controls." as you would in text controller
 end
 ```
+
+## Z-Order
+
+As you draw controls and graphics, each new item increases the Z index, effectively drawing on top of the previous components.
+
+![Image of Z Order](img/ZOrder.svg ':size=400')
