@@ -6,14 +6,15 @@
 -- Plugin Name
 -- Plugin Author
 -- Plugin Source Link
--- LICENSE IF REQUIRED
+-- ©LICENSE IF REQUIRED
 
 local plugName    = "PluginName" -- utility for code availability
+local plugGroup   = "PluginGroup"
 local authorName  = "GroupName" -- Utility for code availability
-local plugVersion = "0.0.1"
+local plugVersion = "0.0.1" -- Semantic versioning!
 
 PluginInfo = {
-  Name        = authorName.."~"..plugName.." v"..plugVersion,
+  Name        = authorName.."~"..plugGroup.."~"..plugName.." v"..plugVersion,
   Version     = plugVersion,
   Id          = "",                                           -- Unique ID guidgenerator.com
   Description = "",                                           -- Description used when prompting for plugin install/update
