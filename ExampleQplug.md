@@ -272,6 +272,7 @@ StrokeColor      = {r,g,b},
 StrokeWidth      = integer,
 CornerRadius     = integer,
 IsReadOnly       = boolean,                                                  <- Cannot be changed at runtime. Not required for indicators.
+ButtonVisualStyle = "",                                                      <- "Flat"|"Gloss"
 }
 
 Graphics object:
