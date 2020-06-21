@@ -94,7 +94,7 @@ Example object:
   PinStyle      = "Input|Output|Both",                                <- Expose pins on the plugin
   UserPin       = boolean,                                            <- Can the user toggle on/off the pin. If false the pin will always be visible
   IconType      = "SVG|Image|Icon",                                   <- Image can be PNG with alpha or Jpeg. Icon is built in icons
-  Icon          = "",                                                 <- Base 64 encoded string https://www.base64-image.de/
+  Icon          = "",                                                 <- Base 64 encoded string https://www.base64-image.de/. For built in icons, use the designer string, e.g. "Play"
 }
 ]]
 function GetControls(props)
