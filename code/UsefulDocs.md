@@ -100,3 +100,41 @@ Controls.Listbox.EventHandler = function(ctl)
     print(tmp["Index"])
 end
 ```
+
+## Radio Buttons
+
+### Type 1 - Code based
+
+```lua
+for idx, ctl in ipairs(Controls.MyName) do
+    Ctl.EventHandler = function(ev)
+        if ev.Boolean == true then
+            for i,v in ipairs(Controls.MyName) do
+                Ctl.Boolean = i==idx
+            end
+        --Positive action here
+        else
+            Contrls.MyName[idx].Boolean = true
+        end
+    end
+end
+```
+
+!> Note that this isn't compatible with snapshots.
+
+### Type 2 - Property Based
+
+```lua
+for idx, ctl in ipairs(Controls.MyName) do
+    Ctl.EventHandler = function(ev)
+        for i,v in ipairs(Controls.MyName) do
+            Ctl.Boolean = i==idx
+        end
+        --Positive action here
+    end
+end
+```
+
+You must then set the button properties `Push Action` to `On` in interfaces. This is then supported with snapshots.
+
+> Thanks to Addison Burnside
