@@ -218,34 +218,34 @@ end
 -- Z-Order is determined by the order graphics are defined (lower to upper; upper covers lower)
 -- Control object:
 -- layout["myControl"] = { <- Control name, must match that defined in GetControls. For multiple controls use ["myControl "..i] in a loop.
--- PrettyName       = "Group~The Best Control",                                 <- User facing control name.
--- Style            = "Fader|Knob|Button|Text|Meter|Led|ListBox|ComboBox|Html",
--- Position         = {x,y},                                                    <- Position on screen
--- Size             = {x,y},                                                       <-Size of control
--- Color            = {r,g,b}|"#RRGGBBAA",                                      <- Control colour
+-- PrettyName       = "Group~The Best Control",                                     <- User facing control name.
+-- Style            = "Fader|Knob|Button|Text|Meter|Led|ListBox|ComboBox|Html|None",<- None allows you to have a control pin but nothing on the UI
+-- Position         = {x,y},                                                        <- Position on screen
+-- Size             = {x,y},                                                        <-Size of control
+-- Color            = {r,g,b}|"#RRGGBBAA",                                          <- Control colour
 -- UnlinkOffColor   = true|false,
--- OffColor         = {r,g,b}|"#RRGGBBAA",                                      <- Control off colour
--- BackgroundColor  = {r,g,b },                                                 <- For Meters
--- ButtonStyle      = "Toggle|Momentary|Trigger|On"Off"Custom",                 <- Custom is for string buttons
--- CustomButtonUp   = "",                                                       <- String value for custom button
--- CustomButtonDown = "",                                                       <- String value for custom button
--- Legend           = "",                                                       <- Button Legend, can also be changed at runtime
--- MeterStyle       = "Level|Reduction|Gain|Standard",                          <- Meter Style
--- ShowTextBox      = boolean <- for meters,                                    fader and knobs
+-- OffColor         = {r,g,b}|"#RRGGBBAA",                                          <- Control off colour
+-- BackgroundColor  = {r,g,b },                                                     <- For Meters
+-- ButtonStyle      = "Toggle|Momentary|Trigger|On"Off"Custom",                     <- Custom is for string buttons
+-- CustomButtonUp   = "",                                                           <- String value for custom button
+-- CustomButtonDown = "",                                                           <- String value for custom button
+-- Legend           = "",                                                           <- Button Legend, can also be changed at runtime
+-- MeterStyle       = "Level|Reduction|Gain|Standard",                              <- Meter Style
+-- ShowTextBox      = boolean                                                       <- for meters, fader and knobs
 -- TextBoxStyle     = "Normal|Meter|NoBackground",
 -- HTextAlign       = "Center|Left|Right",
 -- VTextAlign       = "Center|Top|Bottom",
 -- WordWrap         = boolean,
 -- Padding          = integer,
 -- Margin           = integer,
--- Font             = string,                                                   <- see designer options for values
--- FontStyle        = string,                                                   <- see designer for valid option for chosen font
+-- Font             = string,                                                       <- see designer options for values
+-- FontStyle        = string,                                                       <- see designer for valid option for chosen font
 -- FontSize         = integer,
 -- StrokeColor      = {r,g,b},
 -- StrokeWidth      = integer,
 -- CornerRadius     = integer,
--- IsReadOnly       = boolean,                                                  <- Cannot be changed at runtime. Not required for indicators.
--- ButtonVisualStyle = "",                                                      <- "Flat"|"Gloss"
+-- IsReadOnly       = boolean,                                                      <- Cannot be changed at runtime. Not required for indicators.
+-- ButtonVisualStyle = "",                                                          <- "Flat"|"Gloss"
 -- }
 -- Graphics object:
 -- {
